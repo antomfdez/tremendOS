@@ -1,0 +1,11 @@
+# docker daemon
+sudo dockerd 
+
+# building environment
+sudo docker build <pathwithdockerfile> -t OS-build
+
+# run
+sudo docker run --rm -it -v .:/root/env OS-build
+
+# recompile
+make build-x86_64
